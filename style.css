@@ -11,6 +11,28 @@ body{
         flex: 1;
     }
 }
+.img-my{
+    mask-image: linear-gradient(black, transparent);
+    /*mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.62) 60%,rgba(0,0,0,0) 0%);*/
+}
+.image-gradient {
+    /*width: 650px;*/
+    height: 427px;
+    background:
+            linear-gradient(to left, #6b2f64, #a24f4f),
+            image("img/tracker.png") 0 0 no-repeat;
+    background-blend-mode: screen;
+    width: 60%;
+    background-size: cover;
+}
+.my-item{
+    padding-top: 4px;
+    padding-bottom: 0;
+    border: 0;
+}
+.my-item:hover{
+    background-color: #E5FFED;
+}
 .mdi-36px {
     font-size: 39px;
     margin-right:10px;
@@ -58,7 +80,14 @@ body{
 .green-back{
     background: #F1FDF3;
 }
-
+#div_top_hypers {
+    display:inline;
+}
+#ul_top_hypers{
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
 .frontInfo{
     background: #F1FDF3;
     z-index: 100;
@@ -103,18 +132,10 @@ body{
     width: 3rem;
     height: 3rem;
 }
-/*.product-device-2 {*/
-/*    top: -25%;*/
-/*    right: auto;*/
-/*    bottom: 0;*/
-/*    left: 5%;*/
-/*    background-color: #e5e5e5;*/
-/*}*/
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
 }
-/* rtl:begin:ignore */
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
