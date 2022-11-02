@@ -13,7 +13,7 @@ body{
 }
 .img-my{
     mask-image: linear-gradient(black, transparent);
-    /*mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.62) 60%,rgba(0,0,0,0) 0%);*/
+    -webkit-mask-image: linear-gradient(black, transparent);
 }
 .image-gradient {
     /*width: 650px;*/
